@@ -1,0 +1,57 @@
+.background {
+  background-image: url(https://img.freepik.com/premium-vector/summer-beach-background-sandy-seashore-sea-coast-with-palm-tree-vocation-seaside-travel-cartoon-backdrop-illustration_102902-1407.jpg?w=2000);
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.bird {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  transform: rotate(-5deg);
+  width: 100px;
+  height: 100px;
+  animation: bird 30s infinite;
+}
+.ship {
+  position: absolute;
+  top: 550px;
+  left: 600px;
+  width: 150px;
+  height: 150px;
+  animation: ship 30s infinite;
+}
+.sun {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 150px;
+  height: 150px;
+  animation: sun 30s infinite;
+}
+@keyframes bird {
+  0% {
+    right: 50px;
+  }
+  100% {
+    right: 1500px;
+  }
+}
+@keyframes ship {
+  0% {
+    left: 100px;
+  }
+  100% {
+    left: 1500px;
+  }
+}
+@keyframes sun {
+  0% {
+    top: 1px;
+  }
+  100% {
+    top: 100px;
+  }
+}
